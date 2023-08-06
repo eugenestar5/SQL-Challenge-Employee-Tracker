@@ -1,0 +1,34 @@
+{
+  "name": "eugenestar5",
+  "version": "1.0.0",
+  "description": "CMS that is accessed through the command line",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eugenestar5/SQL-Challenge-Employee-Tracker.git"
+  },
+  "keywords": [
+    "CMS",
+    "CLI",
+    "Node",
+    "MYSQL",
+    "mysql2",
+    "inquirer"
+  ],
+  "author": "Eugene Bonsu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eugenestar5/SQL-Challenge-Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/eugenestar5/SQL-Challenge-Employee-Tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "dotenv": "^9.0.0",
+    "inquirer": "^8.0.0",
+    "mysql2": "^2.2.5"
+  }
+}
