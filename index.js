@@ -8,7 +8,7 @@ const db = mysql.createConnection(
   {
     host: "localhost",
     user: "root",
-    password: "<Please use your msql password and connection>",
+    password: "<Please use your mysql password and connection>",
     database: "nodejs_employeeTracker",
   },
   console.log("Connected nodejs_employeeTracker_database")

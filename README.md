@@ -4,7 +4,7 @@
 
 This allows the user to answer prompt questions for the user to query the database to view employees, departments, and roles.
 
-Watch a [video](https://drive.google.com/file/d/1rXKqm7DibptWGKw8jJeDXg6gYtEpoj0W/view?usp=sharing) demonstration of the basic functionality.
+Watch a [video](https://drive.google.com/file/d/1GrDbPno_1wmtzTDzdImsvanVdPMYdbSg/view?usp=sharing) demonstration of the basic functionality.
 
 
 ## Table of Contents
