@@ -5,8 +5,8 @@ require("dotenv").config()
 const db = mysql.createConnection(
   {
     host: "localhost",
-    user: process.env.DB_USER,
-    password: process.env.DB_PW,
+    user: "root",
+    password: "Eugene_Zane_Elijah_0919!!",
     database: "nodejs_employeeTracker",
   },
   console.log("Connected nodejs_employeeTracker_database")

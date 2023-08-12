@@ -8,7 +8,7 @@ const db = mysql.createConnection(
   {
     host: "localhost",
     user: "root",
-    password: "<Please put your database password here>",
+    password: "<Please use your msql password and connection>",
     database: "nodejs_employeeTracker",
   },
   console.log("Connected nodejs_employeeTracker_database")
@@ -43,20 +43,23 @@ function viewDeparments(){
 db.query("SELECT * FROM department", (err, results)=>{
 if(err) throw err;
 console.table(results)
+initializeApp()
 })
 }
 
 function viewRoles(){
-  db.query("SELECT * FROM role", (err, results)=>{
+  db.query("SELECT role.id, title, salary, name as Department FROM role left join department on role.department_id=department.id", (err, results)=>{
   if(err) throw err;
   console.table(results)
+  initializeApp()
   })
   }
 
   function viewEmployees(){
-    db.query("SELECT * FROM employee", (err, results)=>{
+    db.query("SELECT employee.id, employee.first_name, employee.last_name, title, Concat(a.first_name,' ', a.last_name) as Manager FROM employee left join role on employee.role_id=role.id left join employee a on a.manager_id=employee.id", (err, results)=>{
     if(err) throw err;
     console.table(results)
+    initializeApp()
     })
     }
 
